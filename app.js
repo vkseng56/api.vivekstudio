@@ -6,7 +6,7 @@ const categoryRouter = require('./routes/category.routes');
 const productRouter = require('./routes/product.routes');
 app.use('/api/', categoryRouter);
 app.use('/api/', productRouter);
-const port = process.env.port | 3000;
+const port = process.env.PORT || 3000;
 
 app.listen(port, ()=>{
     console.log('app is running on port '+ port);
