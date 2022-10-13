@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
+
 const productSchema = new mongoose.Schema({
-  name: {
+  title: {
     type: String,
     required: true
   },
@@ -8,10 +9,29 @@ const productSchema = new mongoose.Schema({
     type: String,
     required: true
   },
-  beforeDubbingLink: {
+  imageurl: {
+    type: String,
+    required: true
+  },
+  ytId: {
     type: String,
   },
-  afterDubbingLink: {
+  ytIdBeforeDubbing: {
+    type: String
+  },
+  videoDuration: {
+    type: Number
+  },
+  makingDuration: {
+    type: Number
+  },
+  budget: {
+    type: Number
+  },
+  fromLanguage:{
+    type: String
+  },
+  toLanguage: {
     type: String
   }
 });

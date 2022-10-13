@@ -25,6 +25,7 @@ router.get('/product/:id', async (req,res)=>{
 
 router.post('/product', async (req,res)=>{
     try {
+        debugger;
         if(!req.body){
             res.status(400).send('Bad Request')
         }
