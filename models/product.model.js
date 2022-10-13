@@ -33,6 +33,9 @@ const productSchema = new mongoose.Schema({
   },
   toLanguage: {
     type: String
+  },
+  description: {
+    type: String
   }
 });
 
